@@ -1,0 +1,22 @@
+{ 
+   "Bot": {
+    "Token": ["Vegas#0001"],
+    "MongoURL": "Vegas#0001",
+    "Durum": "VEGGGGGGGGGGGGAAAAAAAAAAAAAAASSSSSSSSSSSSS",
+    "Status": "Vegas#0001",
+    "Owners": ["786608424598503475"],
+    "Prefix": ["Vegas#0001"]
+  },
+  
+   "Server": {
+    "GuildID": "Vegas#0001"
+  },
+
+   "Roles": {
+    "EnAltYetkiliRolü": "Vegas#0001"
+  },
+  
+   "Channels": {
+    "BotVoice": ["Vegas#0001"]
+  }
+}
