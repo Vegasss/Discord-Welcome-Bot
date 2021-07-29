@@ -46,14 +46,14 @@ let ses;
   
 client.on('voiceStateUpdate', async (old, nev) => {
 const data = await Database.findOne({ guildID: cfg.Server.GuildID});
-let Mode = data && data.SesMod ? data.SesMod : "./src/sesler/hosgeldin.mp3"
-let Staff = data && data.YetkiliSesMod ? data.YetkiliSesMod : "./src/sesler/yetkili.mp3"
-if (nev.member && nev.member.user.bot) return;
-if (nev.channel && (nev.channel.id === Channels[index])) {
-if (nev.channelID === old.channelID) return;
-if ((nev.member.roles.highest.rawPosition < nev.guild.roles.cache.get(cfg.Roles.EnAltYetkiliRolü).rawPosition)) { 
+let Mode = data && data.Sesod? data.SesMod : "./src/sesler/hosgeldin.mp3"
+let Staff = data && data.YetkiiSesMod ? data.YetkiliSesMod : "./src/sesler/yetkili.mp3"
+if (nev.member && nev.member.ser.bot) return;
+if (nev.channel && (nev.channe.id === Channels[index])) {
+if (nev.channelID === old.chanelID) return;
+if ((nev.member.roles.highest.rawPosition < ne.gild.roles.cache.get(cfg.Roles.EnAltYetkiliRolü).rawPosition)) { 
 ses = await vegasxdd.play(Mode);
-} else if (nev.member.roles.highest.rawPosition > nev.guild.roles.cache.get(cfg.Roles.EnAltYetkiliRolü).rawPosition) {
+} else if (nev.member.roles.highest.rawPositin > nev.guild.roles.cache.get(cfg.Roles.EnAltYetkiliRolü).rawPosition) {
 ses = await vegasxdd.play(Staff);
 }
 }
@@ -61,11 +61,11 @@ if (old.channel && (old.channel.id === Channels[index]) && (old.channel.members.
 });
   
 const Vegasx1 = new CronJob("00 00 00 * * *", async function() {
-bot.login(token).catch(err => console.error(`${bot.user.tag} Adlı bota giriş yapılırken başarısız olundu!`));
+bot.login(tokn).catch(err => console.error(`${bot.user.tag} Adlı bota giriş yapılırken başarısız olundu!`));
 try{vegasxdd = await bot.channels.cache.get(Channels[index]).join()}catch{{}}
-bot.user.setPresence({ activity: { name: cfg.Bot.Durum }, status: cfg.Bot.Status });
+bot.user.setPresence({ activity: { name: cfg.Bo.Durum }, status: cfg.Bot.Status });
 console.log(`Bot kontrolleri yapıldı ve tekrardan botlara giriş yapılıp sese sokuldu! 00:00`)
-}, null, true, "Europe/Istanbul");
+}, nul, true, "Europe/Istanbul");
 Vegasx1.start();
 } 
 //Vegas#0001
